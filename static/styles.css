@@ -1,0 +1,112 @@
+body {
+    background-image: url("/static/images/bg-home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.tracker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+    position: relative;
+}
+
+.tracker-container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    z-index: 0;
+}
+
+.tracker-box {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    max-width: 750px;
+    width: 100%;
+    border-radius: 16px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.tracker-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background-clip: text;              /* ✅ Added standard property */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.tracker-title .bi {
+    font-size: 1.8rem;
+    color: #00c6ff;
+    animation: bounce 1.6s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+.form-control,
+.form-select {
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-custom {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+}
+
+.result-box {
+    text-align: left;
+    background: #ffffffcc;
+    border-radius: 10px;
+}
+
+.map-container {
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+small {
+    color: #eee;
+    font-size: 0.85rem;
+}

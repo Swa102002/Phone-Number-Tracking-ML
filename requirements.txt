@@ -1,0 +1,9 @@
+Flask
+pandas
+numpy
+scikit-learn
+joblib
+phonenumbers
+opencage
+python-dotenv
+folium
