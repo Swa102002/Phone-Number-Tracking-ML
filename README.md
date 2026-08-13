@@ -5,8 +5,10 @@ A Flask-based web application that analyzes phone numbers and predicts the telec
 ---
 
 ## 📸 Application Preview
-
+Prediction_Result
 ![Phone Number Tracking ML](screenshots/prediction_result.png)
+Leaflet_Map
+![Phone Number Tracking ML](screenshots/leaflet_map.png)
 
 
 ## 🎯 Project Overview
