@@ -6,7 +6,7 @@ A Flask-based web application that analyzes phone numbers and predicts the telec
 
 ## 📸 Application Preview
 
-![Phone Number Tracking ML]("C:\Users\Swapnil\OneDrive\Documents\Phone-Number-Tracking-ML\screenshots\prediction_result.png")
+![Phone Number Tracking ML](screenshots)
 
 
 ## 🎯 Project Overview
